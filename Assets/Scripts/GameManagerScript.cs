@@ -147,11 +147,11 @@ public class GameManagerScript : MonoBehaviour
 
     private IEnumerator LeaderboardUpdate(float waitTime)
     {
-        Debug.Log("Coroutine started.");
+        //Debug.Log("Coroutine started.");
         yield return StartCoroutine(CoroutineUtil.WaitForRealSeconds(waitTime));
         _playfabManager.GetLeaderboard();
         _playfabManager.GetPlayerLeaderboard();
-        Debug.Log("Coroutine ended after " + waitTime + " seconds.");
+        //Debug.Log("Coroutine ended after " + waitTime + " seconds.");
 
     }
 }
@@ -160,7 +160,6 @@ public static class CoroutineUtil
 {
     public static IEnumerator WaitForRealSeconds(float waitTime)
     {
-        Debug.Log("Start LB Update");
         float currentTime = Time.realtimeSinceStartup;
         while(Time.realtimeSinceStartup < currentTime + waitTime)
         {
