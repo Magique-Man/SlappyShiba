@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Name: PlayFabEditorPrefsSO
+  m_EditorClassIdentifier: 
+  DevAccountEmail: obfuscate_@outlook.com
+  DevAccountToken: 8ewu8ubejmqoh9eacbdcbyp41nwsw4r73b53u89j3z4d9oh3nfwbqwpdmyt7rn6adsmp8pim463fthtr8beemm7qycfgsgu1sb6mndnuexz5i4fn3xr1d84zkaf57ddt1pc35knymrjntuj8pgwcghkcoro5hwrpnwykny6twa7rzjw6b7st1gq5rdc9maiajr9rmf3p
+  SelectedStudio: ShibArcade
+  SdkPath: Assets/PlayFabSDK
+  EdExPath: 
+  LocalCloudScriptPath: 
+  PanelIsShown: 0
+  curMainMenuIdx: 1
+  curSubMenuIdx: 0
