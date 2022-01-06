@@ -107,18 +107,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void QuitGame()
     {
-        if(ScoreScript.Score > ScoreScript.HighScore)
-        {
-            //ScoreScript.HighScore = ScoreScript.Score;
-            //_scoreScript.SetHighScore();
-            //PlayerPrefs.SetInt("test_int", 1);
-            Application.Quit();
-        }
-        else
-        {
-            Application.Quit();
-        }
-        
+        Application.Quit();
     }
 
 
