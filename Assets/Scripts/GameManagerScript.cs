@@ -39,8 +39,6 @@ public class GameManagerScript : MonoBehaviour
         _gameStartCanvas.SetActive(true);
         _leaderBoardCanvas.SetActive(false);
         //_playfabManager.Login();
-
-
     }
 
     private void Update()
@@ -87,7 +85,7 @@ public class GameManagerScript : MonoBehaviour
         {
             PlayerPrefs.Save();
             _playfabManager.LeaderboardSend(ScoreScript.Score);
-            StartCoroutine(LeaderboardUpdate(1.0f));
+            StartCoroutine(LeaderboardUpdate(2.0f));
             IsCleanupRequired = false;
         }
         
