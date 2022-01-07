@@ -11,6 +11,7 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField] bool isPaused;
     [SerializeField] bool isGameStarted;
     [SerializeField] PlayfabManager _playfabManager;
+    [SerializeField] InterstitialAdScript _intAdPlayer;
     [SerializeField] GameObject _highScoreObject, _highScoreObjectGO;
     [SerializeField] GameObject _pauseButton;
     [SerializeField] GameObject _gameStartCanvas;
@@ -81,6 +82,8 @@ public class GameManagerScript : MonoBehaviour
 
     public void GameOver()
     {
+        //_intAdPlayer.LoadAd();
+
         if(IsCleanupRequired)
         {
             PlayerPrefs.Save();
@@ -95,6 +98,8 @@ public class GameManagerScript : MonoBehaviour
 
     public void RestartLevel(string sceneName)
     {
+        //_intAdPlayer.ShowAd();
+
         SceneManager.LoadScene(sceneName);
     }
 
